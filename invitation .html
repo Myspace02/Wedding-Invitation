@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Madhu &amp; Neeraj – Wedding Invitation</title>
+<script>document.documentElement.className='js lock'</script>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff3dc;--card:#fffdf8;--ink:#42101b;--muted:#7a584b;--accent:#9b1b30;--gold:#a06c1c;--line:#e9d1a2;--h1:#5a0e20;--h2:#26040d;--hg:#f6d27c;--hink:#fbe9c4;--on:#fff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#190a0e;--card:#2a1218;--ink:#f6e6d0;--muted:#d0b4a2;--accent:#cf4560;--gold:#e8be6a;--line:#4a2630;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#190a0e;--card:#2a1218;--ink:#f6e6d0;--muted:#d0b4a2;--accent:#cf4560;--gold:#e8be6a;--line:#4a2630;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--h2)}
+html.lock,html.lock body{overflow:hidden}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 16px/1.7 'Jost',system-ui,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:540px;margin:0 auto;padding:0 20px}
+.dn{font-family:'Tiro Devanagari Hindi','Noto Serif Devanagari',serif}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0}
+#gate{position:fixed;inset:0;z-index:99;display:none;overflow:hidden}
+.js #gate{display:block}
+.door{position:absolute;top:0;bottom:0;width:50.5%;background:radial-gradient(circle at 50% 50%,#7e1530,var(--h1) 60%,var(--h2));box-shadow:inset 0 0 0 10px var(--h2),inset 0 0 0 11px var(--hg),inset 0 0 0 20px var(--h2),inset 0 0 0 21px rgba(246,210,124,.5);transition:transform 1.3s cubic-bezier(.7,0,.2,1)}
+.door.l{left:0}.door.r{right:0}
+.go .l{transform:translateX(-101%)}.go .r{transform:translateX(101%)}
+.gt{position:absolute;left:0;right:0;top:calc(50% - 150px);text-align:center;color:var(--hink);font:italic 500 24px 'Cormorant Garamond',serif;transition:opacity .4s}
+.seal{position:absolute;left:50%;top:50%;width:176px;height:176px;margin:-88px 0 0 -88px;border-radius:50%;border:2px solid var(--hg);background:var(--h2);color:var(--hg);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .5s,transform .5s;box-shadow:0 0 0 0 rgba(246,210,124,.55);animation:pr 2.4s infinite}
+.seal b{font:400 54px/1.1 'Pinyon Script',cursive}
+.seal span{font:400 14px 'Jost',sans-serif;color:var(--hink)}
+@keyframes pr{to{box-shadow:0 0 0 30px rgba(246,210,124,0)}}
+.go .seal{opacity:0;transform:scale(1.4);animation:none}.go .gt{opacity:0}
+.hero{position:relative;overflow:hidden;text-align:center;color:var(--hink);padding:0 18px 44px;background:radial-gradient(circle at 50% 34%,#8a1630 0,var(--h1) 46%,var(--h2) 100%);border-radius:0 0 50% 50%/0 0 36px 36px}
+.toran{height:30px;margin:0 -18px 26px;border-top:3px solid var(--hg);background:radial-gradient(circle at 50% 9px,#ffb43c 0 6px,#e8830f 7px 8px,transparent 9px) 0 0/22px 30px repeat-x}
+.mandala{position:absolute;left:50%;top:170px;width:600px;height:600px;margin-left:-300px;border-radius:50%;background:repeating-conic-gradient(var(--hg) 0 1.4deg,transparent 1.4deg 9deg);-webkit-mask:radial-gradient(circle,transparent 33%,#000 34% 66%,transparent 67%);mask:radial-gradient(circle,transparent 33%,#000 34% 66%,transparent 67%);opacity:.2;animation:spin 100s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pt{position:absolute;top:-30px;color:#ffa534;opacity:.8;font-style:normal;animation:fall linear infinite;pointer-events:none}
+@keyframes fall{to{transform:translateY(900px) rotate(300deg)}}
+.hz{position:relative}
+.om{margin:0;font-size:18px;color:var(--hg)}
+.sl{margin:8px 0 26px;font-size:14.5px;line-height:1.9}
+.arch{max-width:380px;margin:0 auto;padding:44px 16px 30px;border:1.5px solid var(--hg);border-radius:190px 190px 22px 22px;background:rgba(0,0,0,.2);box-shadow:0 0 0 6px var(--h1),0 0 0 7px rgba(246,210,124,.55)}
+.ko{margin:0;font-size:20px;color:var(--hg)}
+.tg{margin:2px 0 0;font:italic 500 19px 'Cormorant Garamond',serif}
+h1{display:flex;flex-direction:column;align-items:center;margin:4px 0 6px;font-weight:400}
+h1 .n{font:400 clamp(66px,22vw,100px)/1.15 'Pinyon Script',cursive;padding:0 .2em;color:var(--hg)}
+@supports (-webkit-background-clip:text){h1 .n{background:linear-gradient(180deg,#fff3c8,#f0be55 55%,#c98d22);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}}
+h1 .w{font:italic 500 22px 'Cormorant Garamond',serif;display:flex;align-items:center;gap:12px}
+h1 .w::before,h1 .w::after{content:"";width:44px;height:1px;background:var(--hg)}
+.dt{margin:10px 0 0;font:600 22px 'Cormorant Garamond',serif}
+.pl{margin:0;font-size:14.5px;opacity:.85}
+.cl{margin:26px 0 8px;font:italic 500 18px 'Cormorant Garamond',serif;color:var(--hg)}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:400px;margin:0 auto}
+.cd div{border:1px solid rgba(246,210,124,.5);border-radius:14px;padding:10px 2px 6px;background:rgba(255,255,255,.06)}
+.cd b{display:block;font:600 34px/1.1 'Cormorant Garamond',serif;color:var(--hg)}
+.cd span{font-size:13px}
+.s{padding:46px 0 14px;text-align:center}
+.band{margin:34px 0 0;padding:46px 0 30px;background:linear-gradient(180deg,var(--h1),var(--h2));color:var(--hink);text-align:center}
+.dv{display:flex;align-items:center;gap:12px;color:var(--gold);justify-content:center;margin-bottom:6px}
+.dv::before,.dv::after{content:"";width:52px;height:1px;background:currentColor}
+.band .dv{color:var(--hg)}
+h2{font-size:38px;line-height:1.15;color:var(--accent)}
+.band h2{color:var(--hg)}
+.sub{margin:2px 0 22px;font-size:15px;color:var(--gold)}
+.band .sub{color:var(--hink);opacity:.85}
+.msg{font-size:17px;margin:12px 0}
+.q{font:italic 500 22px/1.5 'Cormorant Garamond',serif;color:var(--accent);margin:18px 0}
+.tl{position:relative;text-align:left;padding-left:30px}
+.tl::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:1px;background:linear-gradient(var(--hg),rgba(246,210,124,.15))}
+.ev{position:relative;margin:0 0 14px;padding:14px 16px;border:1px solid rgba(246,210,124,.3);border-radius:16px;background:rgba(255,255,255,.05)}
+.ev::before{content:"";position:absolute;left:-26px;top:20px;width:11px;height:11px;border-radius:50%;background:var(--h2);border:2px solid var(--hg)}
+.ev time{display:block;color:var(--hg);font-size:14px;font-weight:400}
+.ev h3{font-size:24px;line-height:1.25;color:var(--hink);margin:2px 0}
+.ev .dn{font-size:14px;color:var(--hg)}
+.ev p{margin:4px 0 0;font-size:14.5px;color:var(--hink);opacity:.85}
+.ev.big{border-color:var(--hg);background:linear-gradient(135deg,rgba(246,210,124,.2),rgba(246,210,124,.04));box-shadow:0 0 26px -8px rgba(246,210,124,.55)}
+.ev.big::before{background:var(--hg)}
+.ev.big h3{font-size:28px;color:var(--hg)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 16px;margin-bottom:14px}
+.box h3{font-size:32px;color:var(--accent);line-height:1.2}
+.box p{margin:6px 0 0}
+.box small{display:block;color:var(--gold);font-size:14px}
+.sm{font-size:14.5px;color:var(--muted)}
+.btn{display:inline-block;margin-top:14px;padding:12px 24px;min-height:46px;border-radius:999px;background:var(--accent);color:var(--on);text-decoration:none;font:500 16px 'Jost',sans-serif;border:0;cursor:pointer}
+.btn.g{background:var(--hg);color:var(--h2)}
+.btn.o{background:transparent;color:var(--hg);border:1.5px solid var(--hg)}
+.fam{display:grid;gap:14px}
+.fam .box{margin:0}
+.lst{text-align:left}
+.lst h3{font-size:24px;color:var(--accent);margin-top:18px}
+.lst p{margin:0;font-size:15.5px}
+.lst .rh{font:italic 500 20px/1.5 'Cormorant Garamond',serif;color:var(--ink)}
+.in{display:flex;flex-direction:column;gap:6px}
+.in input{width:100%;padding:13px 16px;font:inherit;font-size:16px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px}
+.row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+footer{margin-top:44px;padding:40px 20px 46px;text-align:center;background:var(--h2);color:var(--hink)}
+footer b{display:block;font-size:22px;line-height:1.6;font-weight:400;color:var(--hg)}
+footer p{margin:10px 0 0;font-size:15px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="door l"></div><div class="door r"></div>
+  <p class="gt">You’re warmly invited</p>
+  <button class="seal" id="open" aria-label="Open the invitation"><b>M &amp; N</b><span>Tap to open</span></button>
+</div>
+
+<header class="hero">
+  <div class="toran"></div>
+  <div class="mandala"></div>
+  <div class="hz">
+    <p class="dn om">।। श्री गणेशाय नम ।।</p>
+    <p class="dn sl">विघ्न हरण मंगल करण, गौरी पुत्र श्री गणेश ।<br>प्रथम निमंत्रण आपको, ब्रह्मा, विष्णु, महेश ।।</p>
+    <div class="arch">
+      <p class="dn ko">शुभ विवाह</p>
+      <p class="tg">Together with their families</p>
+      <h1><span class="n">Madhu</span><span class="w">weds</span><span class="n">Neeraj</span></h1>
+      <p class="dt">Monday, 07 December 2026</p>
+      <p class="pl">Bhopal, Madhya Pradesh</p>
+    </div>
+    <p class="cl">Until the Ashirwad Samaroh begins</p>
+    <div class="cd">
+      <div><b id="dd">00</b><span>Days</span></div>
+      <div><b id="hh">00</b><span>Hours</span></div>
+      <div><b id="mm">00</b><span>Minutes</span></div>
+      <div><b id="ss">00</b><span>Seconds</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="s"><div class="wrap">
+  <div class="dv">✦</div>
+  <h2>Dear loved ones,</h2>
+  <p class="msg">By the boundless grace of the Almighty, a blessed occasion has arrived in our family.</p>
+  <p class="q">To make the sweet moments of this sacred union even brighter, “our family” will be waiting for all of you.</p>
+  <p class="msg">Your presence will make the day unforgettable…</p>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="dv">✦</div>
+  <h2>The celebrations</h2>
+  <p class="sub dn">शगुन के सुनहरे क्षण</p>
+  <div class="tl">
+    <div class="ev"><time>Saturday, 05 December 2026</time><h3>Mati Mangar, Mandap &amp; Mata Pujan</h3><span class="dn">माटी मांगर, मण्डप, माता पूजन</span></div>
+    <div class="ev"><time>Sunday, 06 December 2026</time><h3>Haldi &amp; Mehndi</h3><span class="dn">हल्दी, मेहन्दी</span></div>
+    <div class="ev"><time>Sunday, 06 December 2026 at 10:00 AM</time><h3>Barhon Sanskar</h3><span class="dn">बरहों संस्कार (आद्विक)</span><p>At the family residence<br>Aadvik, grandson of Rambhuvan Kushwaha and son of Pradeep – Smt. Neha</p></div>
+    <div class="ev big"><time>Monday, 07 December 2026</time><h3>Shubh Vivah</h3><span class="dn">शुभ विवाह</span></div>
+    <div class="ev big"><time>Monday, 07 December 2026, from 7:00 PM till your arrival</time><h3>Ashirwad Samaroh &amp; Swaruchi Bhoj</h3><span class="dn">आशीर्वाद समारोह एवं स्वरूचिभोज</span><p>Shraddha Marriage Garden, Bairagarh, Bhopal</p></div>
+    <div class="ev"><time>Tuesday, 08 December 2026</time><h3>Bheegi Palkein</h3><span class="dn">भीगी पलके</span></div>
+  </div>
+</div></section>
+
+<section class="s"><div class="wrap">
+  <div class="dv">✦</div>
+  <h2>Venue</h2>
+  <p class="sub">Ashirwad Samaroh &amp; Swaruchi Bhoj</p>
+  <div class="box">
+    <h3>Shraddha Marriage Garden</h3>
+    <p>Near Daga House, C.T.O. Bairagarh, Bhopal</p>
+    <p class="sm">Monday, 07 December 2026, from 7:00 PM till your arrival</p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Shraddha+Marriage+Garden+Daga+House+CTO+Bairagarh+Bhopal" target="_blank" rel="noopener">📍 Get directions</a>
+  </div>
+</div></section>
+
+<section class="s"><div class="wrap">
+  <div class="dv">✦</div>
+  <h2>The two families</h2>
+  <p class="sub">&nbsp;</p>
+  <div class="fam">
+    <div class="box"><small class="dn">सौ. कां.</small><h3>Madhu</h3>
+      <p>Granddaughter of Shri Shambhuprasad Kushwaha &amp; Late Chhotki Kushwaha</p>
+      <p>Daughter of Shri Rambhuvan Kushwaha &amp; Smt. Parvati Kushwaha</p>
+      <p class="sm">Satyam Colony, Bairagarh, Bhopal</p></div>
+    <div class="box"><small class="dn">चि.</small><h3>Neeraj</h3>
+      <p>Grandson of Shri Molai Prasad Kushwaha</p>
+      <p>Son of Shri Ramnarayan Kushwaha &amp; Smt. Shyamkali Kushwaha</p>
+      <p class="sm">Kolar Road, Bhopal, M.P.</p></div>
+  </div>
+</div></section>
+
+<section class="s"><div class="wrap lst">
+  <h3>Warmly welcoming you</h3>
+  <p>Neha–Pradeep (Bhaiya–Bhabhi), Pushpa–Siddhgopal (Didi–Jijaji), Jay, Rashmi, Neha, Pooja, Reena, Anoop, Ravi, Nikhil, Vicky, Shivam, Anshu, Yashu, Chhotu, Ankit, Ayaan, Nancy, Divya, Kavya, Disha, Driti, Kajal, Seema</p>
+  <h3>With regards</h3>
+  <p>Shriniwas, Ramniwas, Siddhnath, Lalman, Amit, Radheshyam, Harihar, Pramod, Harinarayan, Jitendra, Diwakar, Pawan, Deepnarayan, Deepak</p>
+  <h3>Eagerly awaiting your presence</h3>
+  <p>Shri Chandrabhan Kushwaha, Shri Jagdish Kushwaha, Shri Tirathprasad Kushwaha, Shri Radheshyam Kushwaha</p>
+  <h3>A little request from the kids</h3>
+  <p class="rh">“Sweet, sweet winter is here — don’t let the cold scare you away. Please, please come to my Bua’s wedding!”</p>
+  <p>– Aanvi, Aadvik</p>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="dv">✦</div>
+  <h2>Will you join us?</h2>
+  <p class="sub">Let the family know you’re coming</p>
+  <div class="in">
+    <input id="nm" type="text" placeholder="Your name" autocomplete="name" aria-label="Your name">
+    <a class="btn g" id="wa" href="#" target="_blank" rel="noopener">🙏 Confirm on WhatsApp</a>
+  </div>
+</div></section>
+
+<footer>
+  <b class="dn">आपके व्यस्त जीवन की एक शाम<br>कुशवाहा परिवार के नाम</b>
+  <p>A winter evening from your busy life, in the name of the Kushwaha family.</p>
+  <p>From Rambhuvan Kushwaha<br>Satyam Colony, C.T.O., Bairagarh, Bhopal, M.P.</p>
+  <div class="row"><a class="btn o" href="tel:+918109246065">📞 8109246065</a><a class="btn o" href="tel:+918770999909">📞 8770999909</a></div>
+</footer>
+
+<script>
+var d=document,R=d.documentElement,$=function(i){return d.getElementById(i)},T=new Date('2026-12-07T19:00:00+05:30').getTime();
+function p(n){return n<10?'0'+n:''+n}
+function tick(){var s=Math.max(0,Math.floor((T-Date.now())/1000));
+$('dd').textContent=p(Math.floor(s/86400));$('hh').textContent=p(Math.floor(s%86400/3600));
+$('mm').textContent=p(Math.floor(s%3600/60));$('ss').textContent=p(s%60)}
+tick();setInterval(tick,1000);
+$('open').onclick=function(){$('gate').classList.add('go');setTimeout(function(){R.classList.remove('lock');$('gate').style.display='none';scrollTo(0,0)},1400)};
+var h=d.querySelector('.hero');
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){for(var i=0;i<14;i++){var e=d.createElement('i');e.className='pt';e.textContent=i%3?'❁':'✿';e.style.cssText='left:'+Math.random()*100+'%;font-size:'+(12+Math.random()*12)+'px;animation-duration:'+(8+Math.random()*8)+'s;animation-delay:-'+Math.random()*14+'s';h.appendChild(e)}}
+function rsvp(){var n=$('nm').value.trim()||'a guest';
+$('wa').href='https://wa.me/918109246065?text='+encodeURIComponent('Jai Shree Ganesh 🙏 This is '+n+'. I’ll gladly join the wedding of Madhu & Neeraj on 07 December 2026.')}
+$('nm').addEventListener('input',rsvp);rsvp();
+</script>
+</body>
+</html>
